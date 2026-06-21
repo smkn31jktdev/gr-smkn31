@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+server
+http.exe
+http_test.exe
+
+# Test binaries
+*.test
+*.out
+
+# Environment variables / Secrets
+.env
+.env.local
+.env.*.local
+
+# Uploads directory
+uploads/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/

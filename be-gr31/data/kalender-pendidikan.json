@@ -1,0 +1,78 @@
+{
+  "wilayah": "DKI Jakarta",
+  "tahun_ajaran": "2025/2026",
+  "semester": "Genap",
+  "asumsi_sistem_sekolah": "5 Hari Kerja (Senin - Jumat)",
+  "rincian_bulan": [
+    {
+      "bulan": "April",
+      "tahun": 2026,
+      "hari_kerja_tersedia": 21,
+      "hari_masuk_efektif": 16,
+      "daftar_libur": [
+        {
+          "tanggal": "2026-04-03",
+          "keterangan": "Wafat Yesus Kristus"
+        },
+        {
+          "tanggal_mulai": "2026-04-13",
+          "tanggal_selesai": "2026-04-17",
+          "keterangan": "Libur Khusus Kelas X & XI (Penilaian Semester Kelas XII)"
+        }
+      ],
+      "kegiatan_akademik": "Penilaian semester untuk kelas akhir (13-17 April)"
+    },
+    {
+      "bulan": "Mei",
+      "tahun": 2026,
+      "hari_kerja_tersedia": 21,
+      "hari_masuk_efektif": 16,
+      "daftar_libur": [
+        {
+          "tanggal": "2026-05-01",
+          "keterangan": "Hari Buruh Internasional"
+        },
+        {
+          "tanggal": "2026-05-14",
+          "keterangan": "Kenaikan Yesus Kristus"
+        },
+        {
+          "tanggal": "2026-05-15",
+          "keterangan": "Cuti Bersama Kenaikan Yesus Kristus"
+        },
+        {
+          "tanggal": "2026-05-27",
+          "keterangan": "Hari Raya Iduladha 1447 H"
+        },
+        {
+          "tanggal": "2026-05-28",
+          "keterangan": "Cuti Bersama Iduladha"
+        }
+      ],
+      "kegiatan_akademik": "Lanjutan penilaian semester kelas akhir"
+    },
+    {
+      "bulan": "Juni",
+      "tahun": 2026,
+      "hari_kerja_tersedia": 22,
+      "hari_masuk_efektif": 13,
+      "daftar_libur": [
+        {
+          "tanggal": "2026-06-01",
+          "keterangan": "Hari Lahir Pancasila"
+        },
+        {
+          "tanggal": "2026-06-17",
+          "keterangan": "Tahun Baru Islam 1448 H"
+        },
+        {
+          "tanggal_mulai": "2026-06-22",
+          "tanggal_selesai": "2026-06-30",
+          "keterangan": "Libur Akhir Semester Genap / Kenaikan Kelas"
+        }
+      ],
+      "kegiatan_akademik": "Penilaian Akhir Semester (2-5 Juni) dan Pembagian Rapor (19 Juni)"
+    }
+  ],
+  "total_hari_masuk_triwulan": 50
+}

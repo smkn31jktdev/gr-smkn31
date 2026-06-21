@@ -1,0 +1,333 @@
+PROPRIETARY AND CONFIDENTIAL LICENSE AGREEMENT
+
+VERSION 1.0
+Effective Date: January 2026
+
+================================================================================
+
+COPYRIGHT AND OWNERSHIP NOTICE
+
+This software and all associated materials (collectively, the "Software") are 
+the exclusive property of:
+
+    ALVIN PUTRA
+    in partnership with
+    SMK NEGERI 31 JAKARTA
+
+All rights reserved. This Software is copyrighted material and proprietary 
+information protected under Indonesian Copyright Law and international copyright 
+treaties.
+
+================================================================================
+
+1. GRANT OF LICENSE
+
+1.1 Limited License Grant
+    Alvin Putra and SMK Negeri 31 Jakarta ("Licensor") grants SMK Negeri 31 
+    Jakarta and its authorized personnel a limited, non-exclusive, 
+    non-transferable license to:
+    
+    (a) Use this Software internally for educational and operational purposes 
+        at SMK Negeri 31 Jakarta
+    (b) Modify the Software for internal use only
+    (c) Run and execute the Software on SMK Negeri 31 Jakarta's infrastructure
+
+1.2 Restrictions
+    Licensee MAY NOT:
+    (a) Use or operate the Software for commercial purposes
+    (b) Sublicense, rent, lease, lend, or loan the Software
+    (c) Redistribute, sell, or transfer the Software to third parties
+    (d) Reverse engineer, decompile, or disassemble the Software
+    (e) Remove or alter any proprietary notices, labels, or marks
+    (f) Create derivative works without prior written consent from Licensor
+    (g) Use the Software for any educational institution other than 
+        SMK Negeri 31 Jakarta without explicit written permission
+    (h) Use the Software for any illegal or unethical purposes
+    (i) Publicly disclose or publish the Software without permission
+    (j) Host or deploy the Software on public servers or cloud services 
+        without prior written authorization
+
+================================================================================
+
+2. INTELLECTUAL PROPERTY RIGHTS
+
+2.1 Ownership
+    All intellectual property rights, including but not limited to:
+    - Copyright
+    - Patents
+    - Trademarks
+    - Trade secrets
+    - Proprietary information
+    
+    remain with Alvin Putra and SMK Negeri 31 Jakarta.
+
+2.2 Attribution
+    Any use of the Software must include proper attribution to:
+    - "Developed by Alvin Putra"
+    - "For SMK Negeri 31 Jakarta"
+
+2.3 Third-Party Components
+    This Software may include third-party libraries and components licensed 
+    under their respective licenses (see go.mod for dependencies). Usage of 
+    these components is subject to their original licenses. Third-party 
+    licenses do not override the terms of this proprietary license.
+
+================================================================================
+
+3. USE RESTRICTIONS
+
+3.1 Permitted Use
+    - Internal use by SMK Negeri 31 Jakarta staff and students
+    - Educational purposes within the school
+    - Development and testing on SMK Negeri 31 Jakarta infrastructure
+    - Bug fixes and maintenance for SMK Negeri 31 Jakarta operations
+
+3.2 Prohibited Use
+    - Commercial licensing or resale
+    - Use by competing educational institutions
+    - Integration into products or services for external distribution
+    - Deployment on public-facing servers (except SMK Negeri 31 Jakarta's)
+    - Use in research or academic papers without permission
+    - Rental or time-sharing arrangements
+    - Service bureau or managed services arrangements
+    - Transfer to any third party
+
+3.3 Data Security
+    Licensee agrees to:
+    - Maintain confidentiality of all source code
+    - Implement appropriate security measures
+    - Control access to authorized personnel only
+    - Report any security breaches immediately
+    - Not disclose credentials, API keys, or secrets
+
+================================================================================
+
+4. CONFIDENTIALITY
+
+4.1 Confidential Information
+    The Software and all associated documentation constitute confidential 
+    information belonging to Alvin Putra and SMK Negeri 31 Jakarta.
+
+4.2 Non-Disclosure
+    Licensee agrees not to disclose the Software or any related information 
+    to any third party without prior written consent from Licensor.
+
+4.3 Duration
+    Confidentiality obligations survive termination of this License.
+
+================================================================================
+
+5. WARRANTY DISCLAIMER
+
+5.1 "AS-IS" Provision
+    THE SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND, EXPRESSED 
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF:
+    
+    - MERCHANTABILITY
+    - FITNESS FOR A PARTICULAR PURPOSE
+    - NON-INFRINGEMENT
+    - PERFORMANCE
+    - RELIABILITY
+
+5.2 No Guarantees
+    Licensor does not guarantee that:
+    - The Software will meet Licensee's requirements
+    - The Software will be error-free
+    - The Software will be uninterrupted or secure
+    - Any defects will be corrected
+
+5.3 Risks
+    Licensee assumes all risks associated with the use of the Software.
+
+================================================================================
+
+6. LIMITATION OF LIABILITY
+
+6.1 Exclusion
+    IN NO EVENT SHALL LICENSOR BE LIABLE FOR:
+    
+    - INDIRECT DAMAGES
+    - INCIDENTAL DAMAGES
+    - CONSEQUENTIAL DAMAGES
+    - SPECIAL DAMAGES
+    - PUNITIVE DAMAGES
+    - LOSS OF PROFITS
+    - LOSS OF DATA
+    - LOSS OF USE
+    - BUSINESS INTERRUPTION
+    
+    Even if Licensor has been advised of the possibility of such damages.
+
+6.2 Aggregate Liability
+    The total aggregate liability of Licensor shall not exceed the amount 
+    paid (if any) for the Software.
+
+6.3 Essential Terms
+    This limitation reflects a fundamental allocation of risk between the 
+    parties.
+
+================================================================================
+
+7. TERM AND TERMINATION
+
+7.1 Effective Date
+    This License is effective from the date of first use or installation.
+
+7.2 Perpetual License (Non-transferable)
+    This License grants SMK Negeri 31 Jakarta a perpetual right to use the 
+    Software, provided that all terms and conditions of this License are met.
+    However, this License is NOT transferable to other institutions.
+
+7.3 Termination by Licensor
+    Licensor may terminate this License immediately if:
+    
+    (a) Licensee violates any material term of this License
+    (b) Licensee uses the Software for unauthorized purposes
+    (c) Licensee breaches confidentiality obligations
+    (d) Licensee ceases to operate as an educational institution
+    (e) The Software is used for any illegal purposes
+
+7.4 Effect of Termination
+    Upon termination:
+    
+    - All usage rights are immediately revoked
+    - Licensee must cease all use of the Software
+    - Licensee must delete all copies of the Software (or certify destruction)
+    - Data must be handled according to SMK Negeri 31 Jakarta's policies
+    - All accrued obligations remain enforceable
+
+7.5 Survival
+    Sections 2 (Intellectual Property Rights), 4 (Confidentiality), 
+    5 (Warranty Disclaimer), 6 (Limitation of Liability), and 8 (Governing Law) 
+    survive termination.
+
+================================================================================
+
+8. GOVERNING LAW AND JURISDICTION
+
+8.1 Applicable Law
+    This License is governed by and construed in accordance with the laws of 
+    the Republic of Indonesia, without regard to its conflict of laws principles.
+
+8.2 Jurisdiction
+    Both parties submit to the exclusive jurisdiction of the courts located 
+    in Jakarta, Indonesia.
+
+8.3 Dispute Resolution
+    Any disputes arising from this License shall be resolved through:
+    
+    1. Good faith negotiation between parties
+    2. Mediation if negotiation fails
+    3. Arbitration or court proceedings as last resort
+
+8.4 Governing Document
+    This License constitutes the entire agreement between Licensor and Licensee 
+    and supersedes all prior agreements and understandings.
+
+================================================================================
+
+9. SPECIAL PROVISIONS FOR ACADEMIC USE
+
+9.1 Student Use
+    - Students may use the Software only for educational purposes at 
+      SMK Negeri 31 Jakarta
+    - Students may not extract or use the Software after graduation without 
+      explicit permission
+    - Source code access is restricted to authorized developers only
+
+9.2 Staff Use
+    - Only authorized technical staff may access and modify the source code
+    - All modifications must be documented and reported to Licensor
+    - Staff turnover does not grant departing staff any rights to the Software
+
+9.3 Academic Research
+    - Any academic papers or research using this Software must:
+      * Acknowledge Alvin Putra and SMK Negeri 31 Jakarta
+      * Not disclose proprietary algorithms or architecture
+      * Obtain prior written permission from Licensor
+      * Share research findings with Licensor
+
+================================================================================
+
+10. MODIFICATIONS AND UPDATES
+
+10.1 Licensor's Right to Modify
+    Licensor reserves the right to modify this License at any time. Changes 
+    become effective upon posting to the Software repository.
+
+10.2 Security Updates
+    Licensor may provide security updates and patches as deemed necessary. 
+    Such updates are included under this License.
+
+10.3 End of Support
+    Licensor may discontinue support or updates at any time with notice. 
+    Licensee's right to use previously provided Software versions continues 
+    under this License.
+
+================================================================================
+
+11. ATTRIBUTION AND NOTICES
+
+11.1 Required Attribution
+    "This Software is developed by Alvin Putra for SMK Negeri 31 Jakarta"
+    
+    This attribution must appear in:
+    - Product documentation
+    - About pages
+    - User interfaces (if applicable)
+    - Any materials describing the Software
+
+11.2 Notice Preservation
+    All copyright notices, proprietary notices, and license notices must be 
+    preserved in all copies of the Software.
+
+11.3 Removal Prohibition
+    Licensee shall not remove, obscure, or alter any proprietary notices, 
+    including copyright, patent, trademark, and license notices.
+
+================================================================================
+
+12. CONTACT AND NOTICES
+
+All legal notices, permissions requests, and inquiries should be directed to:
+
+    Alvin Putra
+    SMK Negeri 31 Jakarta
+    Jakarta, Indonesia
+
+For official correspondence regarding this License, all communications should 
+be made in Indonesian or English.
+
+================================================================================
+
+13. SEVERABILITY
+
+If any provision of this License is found to be invalid or unenforceable, 
+the remaining provisions shall continue in full force and effect. The parties 
+shall work together to replace the invalid provision with a valid one that 
+achieves the original economic and legal purposes.
+
+================================================================================
+
+14. WAIVER
+
+No waiver of any provision of this License shall be valid unless in writing 
+and signed by authorized representatives of both Licensor and Licensee. 
+Failure to enforce any right or provision does not constitute waiver of such 
+right or provision.
+
+================================================================================
+
+ACCEPTANCE
+
+By installing, copying, using, or accessing this Software, Licensee expressly 
+agrees to all terms and conditions of this License. If Licensee does not agree 
+with any term of this License, Licensee must not use the Software.
+
+================================================================================
+
+© 2024-2025 ALVIN PUTRA & SMK NEGERI 31 JAKARTA
+ALL RIGHTS RESERVED
+
+Last Updated: June 2024
+License Version: 1.0
