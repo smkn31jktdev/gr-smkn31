@@ -8,6 +8,7 @@
 		isAdminRole,
 		isStudentRole
 	} from '../../stores/authStore';
+	import { motion } from '$lib/actions/motion';
 
 	// Redirect to respective dashboards if already authenticated
 	onMount(() => {
@@ -37,13 +38,18 @@
 	></div>
 
 	<div
+		use:motion={{ keyframes: { opacity: [0, 0.08] }, options: { duration: 1.5, ease: "easeOut" } }}
 		class="pointer-events-none absolute top-0 left-0 h-[600px] w-[600px] -translate-x-1/3 -translate-y-1/3 rounded-full bg-[#29b6f6]/8 blur-[100px]"
 	></div>
 	<div
+		use:motion={{ keyframes: { opacity: [0, 0.04] }, options: { duration: 1.5, ease: "easeOut", delay: 0.2 } }}
 		class="pointer-events-none absolute right-0 bottom-0 h-[600px] w-[600px] translate-x-1/3 translate-y-1/3 rounded-full bg-[#0070f3]/4 blur-[120px]"
 	></div>
 
-	<header class="z-10 flex w-full max-w-5xl justify-center px-6">
+	<header
+		use:motion={{ keyframes: { opacity: [0, 0.8], y: [-15, 0] }, options: { duration: 0.8, ease: "easeOut" } }}
+		class="z-10 flex w-full max-w-5xl justify-center px-6"
+	>
 		<div class="flex items-center gap-1.5 opacity-80">
 			<img
 				src="/assets/img/navbar.png"
@@ -55,17 +61,22 @@
 
 	<main class="z-10 my-6 flex w-full max-w-4xl flex-col items-center px-6 text-center">
 		<h2
+			use:motion={{ keyframes: { opacity: [0, 1], y: [15, 0] }, options: { duration: 0.7, ease: "easeOut", delay: 0.2 } }}
 			class="mb-2.5 font-display text-2xl leading-none font-black tracking-tight text-gray-800 uppercase sm:text-[28px]"
 		>
 			PILIH PERAN LOGIN
 		</h2>
-		<p class="mb-10 max-w-md text-xs leading-relaxed font-medium text-gray-400 sm:text-sm">
+		<p
+			use:motion={{ keyframes: { opacity: [0, 1], y: [15, 0] }, options: { duration: 0.7, ease: "easeOut", delay: 0.3 } }}
+			class="mb-10 max-w-md text-xs leading-relaxed font-medium text-gray-400 sm:text-sm"
+		>
 			Selamat datang di portal pembiasaan karakter 7 KAIH. Silakan pilih peranan akses masuk Anda di
 			bawah ini.
 		</p>
 
 		<div class="grid w-full max-w-2xl grid-cols-1 gap-8 px-2 sm:grid-cols-2">
 			<a
+				use:motion={{ keyframes: { opacity: [0, 1], y: [25, 0] }, options: { type: "spring", bounce: 0.2, duration: 0.8, delay: 0.4 } }}
 				href="/login/admin"
 				class="group flex min-h-[350px] flex-col overflow-hidden rounded-xl border border-gray-100/80 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.03)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,112,243,0.15)]"
 			>
@@ -120,6 +131,7 @@
 			</a>
 
 			<a
+				use:motion={{ keyframes: { opacity: [0, 1], y: [25, 0] }, options: { type: "spring", bounce: 0.2, duration: 0.8, delay: 0.5 } }}
 				href="/login/siswa"
 				class="group flex min-h-[350px] flex-col overflow-hidden rounded-xl border border-gray-100/80 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.03)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(77,182,172,0.15)]"
 			>
@@ -173,6 +185,7 @@
 
 		<!-- Clean return link -->
 		<a
+			use:motion={{ keyframes: { opacity: [0, 1], y: [10, 0] }, options: { duration: 0.6, delay: 0.7 } }}
 			href="/"
 			class="text-xxs mt-12 flex cursor-pointer items-center gap-1.5 rounded-xl border border-gray-200 px-5 py-2.5 font-bold text-gray-500 transition-all duration-200 hover:border-gray-300 hover:bg-gray-50"
 		>
@@ -181,7 +194,10 @@
 	</main>
 
 	<!-- Footer Branding -->
-	<footer class="z-10 text-center">
+	<footer
+		use:motion={{ keyframes: { opacity: [0, 1] }, options: { duration: 1, delay: 0.8 } }}
+		class="z-10 text-center"
+	>
 		<span class="text-[9px] font-bold tracking-wider text-gray-400 uppercase">
 			Gerakan Ramah Anak SMK Negeri 31 Jakarta
 		</span>
