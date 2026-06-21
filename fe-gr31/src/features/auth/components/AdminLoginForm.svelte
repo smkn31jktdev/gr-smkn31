@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { loginAdmin } from '../logic/authLogic';
-	import { goto } from '$app/navigation';
-	import { currentUser } from '../../../stores/authStore';
+	import { roleFromToken } from '../../../stores/authStore';
 	import SubmitButton from '../../shared/components/SubmitButton.svelte';
 
 	let email = $state('');
@@ -35,16 +34,16 @@
 				localStorage.removeItem('admin_password');
 			}
 			handlers.resolve();
-			const user = $currentUser;
-			if (user?.role === 'guru_bk') {
-				goto('/bk', { replaceState: true });
-			} else if (
-				user?.role === 'piket' ||
-				(user?.email && user.email.toLowerCase().includes('piket@'))
-			) {
-				goto('/piket', { replaceState: true });
+			// Baca role langsung dari token yang baru disimpan (hindari race condition store)
+			const freshToken =
+				localStorage.getItem('adminToken') ?? localStorage.getItem('studentToken');
+			const role = roleFromToken(freshToken);
+			if (role === 'guru_bk' || role === 'admin_bk' || role === 'bk') {
+				window.location.href = '/bk';
+			} else if (role === 'piket' || role === 'admin_piket') {
+				window.location.href = '/piket';
 			} else {
-				goto('/admin', { replaceState: true });
+				window.location.href = '/admin';
 			}
 		} else {
 			errorMsg = 'Kombinasi email dan kata sandi salah. Silakan coba lagi.';

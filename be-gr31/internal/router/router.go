@@ -45,7 +45,7 @@ func Register(r *gin.Engine, cfg *config.Config, client *astra.Client, mongoDB *
 	// Fase 5: Sekolah
 	kegiatan.RegisterRoutes(r, cfg, client, rdb)
 	bukti.RegisterRoutes(r, cfg, client, rdb, supabaseClient)
-	aduan.RegisterRoutes(r, cfg, client, mongoDB, rdb)
+	aduan.RegisterRoutes(r, cfg, client, mongoDB, rdb, supabaseClient)
 	lomba.RegisterRoutes(r, cfg, client, rdb, supabaseClient)
 
 	// Fase 6: Admin Management

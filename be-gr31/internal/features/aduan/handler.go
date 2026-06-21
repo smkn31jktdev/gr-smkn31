@@ -68,15 +68,18 @@ func (h *Handler) ListAduanSiswa(c *gin.Context) {
 
 // ListAduanAdmin
 func (h *Handler) ListAduanAdmin(c *gin.Context) {
+	claims := c.MustGet("claims").(*util.JWTClaims)
 	nis := c.Query("nis")
 	if nis == "" {
 		nis = c.Query("nisn")
 	}
 	filter := aduanmodel.AduanFilter{
-		NISN:   nis,
-		Status: c.Query("status"),
-		Page:   parseIntQuery(c, "page", 1),
-		Limit:  parseIntQuery(c, "limit", util.DefaultPageSize),
+		NISN:      nis,
+		Status:    c.Query("status"),
+		AdminRole: claims.Role,
+		AdminID:   claims.ID,
+		Page:      parseIntQuery(c, "page", 1),
+		Limit:     parseIntQuery(c, "limit", util.DefaultPageSize),
 	}
 	clampLimit(&filter.Limit)
 
@@ -176,13 +179,16 @@ func clampLimit(limit *int) {
 
 // ExportCSVAduan handles exporting all complaints matching filters to CSV format
 func (h *Handler) ExportCSVAduan(c *gin.Context) {
+	claims := c.MustGet("claims").(*util.JWTClaims)
 	nis := c.Query("nis")
 	if nis == "" {
 		nis = c.Query("nisn")
 	}
 	filter := aduanmodel.AduanFilter{
-		NISN:   nis,
-		Status: c.Query("status"),
+		NISN:      nis,
+		Status:    c.Query("status"),
+		AdminRole: claims.Role,
+		AdminID:   claims.ID,
 	}
 
 	all, err := h.service.ListAll(c.Request.Context(), filter)
@@ -238,7 +244,7 @@ func (h *Handler) ExportCSVAduan(c *gin.Context) {
 			item.NISN,
 			item.NamaSiswa,
 			item.Kelas,
-			item.Walas,
+			item.Wali,
 			statusLabel,
 			item.CreatedAt,
 			item.UpdatedAt,

@@ -1,4 +1,4 @@
-export const BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8081';
+export const BASE = import.meta.env.VITE_API_BASE_URL ?? 'https://api.gr31.tech';
 
 export function getUploadUrl(path: string | null | undefined): string {
 	if (!path) return '';

@@ -77,6 +77,7 @@ export interface Aduan {
 	messages: Message[];
 	status: 'open' | 'in_progress' | 'closed';
 	adminNama?: string;
+	wali?: string;
 	createdAt: string;
 	updatedAt: string;
 }

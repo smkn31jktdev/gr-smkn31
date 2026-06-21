@@ -157,7 +157,7 @@ const htmlTemplate = `<!DOCTYPE html>
 			</div>
 			<div class="info-group">
 				<span class="info-label">Kelas / Guru Wali</span>
-				<span class="info-value">{{.Kelas}} / {{if .Walas}}{{.Walas}}{{else}}-{{end}}</span>
+				<span class="info-value">{{.Kelas}} / {{if .Wali}}{{.Wali}}{{else}}-{{end}}</span>
 			</div>
 			<div class="info-group">
 				<span class="info-label">Terakhir Diperbarui</span>

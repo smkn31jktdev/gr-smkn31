@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { goto } from '$app/navigation';
 	import {
 		authToken,
 		currentUser,
@@ -21,7 +20,7 @@
 		const user = $currentUser;
 
 		if (!token || !user) {
-			goto('/login', { replaceState: true });
+			window.location.href = '/login';
 			return;
 		}
 		const currentRole = user.role;
@@ -55,16 +54,16 @@
 		}
 
 		if (isStudentRole(currentRole)) {
-			goto('/siswa', { replaceState: true });
+			window.location.href = '/siswa';
 		} else if (currentRole === 'guru_bk' || currentRole === 'admin_bk' || currentRole === 'bk') {
-			goto('/bk', { replaceState: true });
+			window.location.href = '/bk';
 		} else if (currentRole === 'piket' || currentRole === 'admin_piket') {
-			goto('/piket', { replaceState: true });
+			window.location.href = '/piket';
 		} else if (isAdminRole(currentRole)) {
-			goto('/admin', { replaceState: true });
+			window.location.href = '/admin';
 		} else {
 			clearAuth();
-			goto('/login', { replaceState: true });
+			window.location.href = '/login';
 		}
 	});
 </script>

@@ -62,6 +62,9 @@ func (s *AduanStore) ListPaged(ctx context.Context, filter aduanmodel.AduanFilte
 	if filter.AdminNama != "" {
 		where["adminNama"] = filter.AdminNama
 	}
+	if filter.Wali != "" {
+		where["wali"] = filter.Wali
+	}
 
 	offset := 0
 	if pageState != "" {

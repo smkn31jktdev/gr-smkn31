@@ -1,6 +1,5 @@
 <script lang="ts">
   import AdminLoginForm from '../../../features/auth/components/AdminLoginForm.svelte';
-  import { motion } from '$lib/actions/motion';
 </script>
 
 <div class="min-h-screen bg-white relative overflow-hidden flex flex-col justify-center items-center p-6 select-none font-sans">
@@ -9,19 +8,16 @@
 
   <!-- Soft gradient aura glows for visual depth -->
   <div
-    use:motion={{ keyframes: { opacity: [0, 0.1] }, options: { duration: 1.5, ease: "easeOut" } }}
     class="absolute top-0 left-0 w-[550px] h-[550px] rounded-full bg-[#29b6f6]/10 blur-[110px] -translate-x-1/4 -translate-y-1/4 pointer-events-none animate-pulse"
     style="animation-duration: 9s;"
   ></div>
   <div
-    use:motion={{ keyframes: { opacity: [0, 0.05] }, options: { duration: 1.5, ease: "easeOut", delay: 0.2 } }}
     class="absolute bottom-0 right-0 w-[550px] h-[550px] rounded-full bg-[#0070f3]/5 blur-[130px] translate-x-1/4 translate-y-1/4 pointer-events-none animate-pulse"
     style="animation-duration: 14s;"
   ></div>
 
   <!-- Back Link button -->
   <a
-    use:motion={{ keyframes: { opacity: [0, 1], x: [-15, 0] }, options: { duration: 0.6 } }}
     href="/login"
     class="absolute top-6 left-6 px-4.5 py-2 bg-white border border-slate-200/80 hover:border-slate-300 rounded-full text-xs font-bold text-slate-500 hover:text-slate-700 hover:bg-slate-50 hover:shadow-sm transition-all flex items-center gap-1.5 cursor-pointer z-20"
   >
@@ -30,7 +26,6 @@
 
   <!-- Central Box Container -->
   <div
-    use:motion={{ keyframes: { opacity: [0, 1], scale: [0.95, 1], y: [15, 0] }, options: { type: "spring", bounce: 0.15, duration: 0.8, delay: 0.2 } }}
     class="w-full max-w-[360px] text-center z-10 flex flex-col items-center"
   >
     <!-- Top school logo banner -->
@@ -50,7 +45,6 @@
 
   <!-- Bottom School branding -->
   <footer
-    use:motion={{ keyframes: { opacity: [0, 1] }, options: { duration: 1, delay: 0.6 } }}
     class="absolute bottom-6 text-center z-10"
   >
     <span class="text-[9px] text-gray-400 font-bold uppercase tracking-widest">

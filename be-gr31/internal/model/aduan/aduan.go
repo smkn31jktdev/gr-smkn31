@@ -13,7 +13,7 @@ type Aduan struct {
 	CreatedAt     string          `json:"createdAt" bson:"createdAt"`
 	UpdatedAt     string          `json:"updatedAt" bson:"updatedAt"`
 	StatusHistory []StatusHistory `json:"statusHistory,omitempty" bson:"statusHistory,omitempty"`
-	Walas         string          `json:"walas,omitempty" bson:"walas,omitempty"`
+	Wali          string          `json:"wali,omitempty" bson:"wali,omitempty"`
 }
 
 // Message
@@ -56,6 +56,8 @@ type AduanFilter struct {
 	Status    string
 	AdminRole string
 	AdminNama string
+	Wali      string
+	AdminID   string
 	Page      int
 	Limit     int
 }

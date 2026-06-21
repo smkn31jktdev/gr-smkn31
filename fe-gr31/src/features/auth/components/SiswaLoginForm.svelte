@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { loginSiswa } from '../logic/authLogic';
-  import { goto } from '$app/navigation';
   import SubmitButton from '../../shared/components/SubmitButton.svelte';
 
   let nis = $state('');
@@ -34,7 +33,7 @@
         localStorage.removeItem('siswa_password');
       }
       handlers.resolve();
-      goto('/siswa', { replaceState: true });
+      window.location.href = '/siswa';
     } else {
       errorMsg = 'Kombinasi NIS dan kata sandi salah. Silakan coba lagi.';
       handlers.reject();

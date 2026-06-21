@@ -74,7 +74,7 @@ export async function loadPendingAduanForWalas() {
 
       const filteredAduan = items.filter(a => {
         const isNotClosed = a.status !== 'closed';
-        const matchesWalas = (a.walas && a.walas.toLowerCase() === user.nama.toLowerCase()) ||
+        const matchesWalas = (a.wali && a.wali.toLowerCase() === user.nama.toLowerCase()) ||
                              (a.kelas && user.kelas && a.kelas.toLowerCase() === user.kelas.toLowerCase());
 
         if (!isNotClosed || !matchesWalas) return false;

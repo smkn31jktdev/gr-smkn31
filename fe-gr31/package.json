@@ -33,7 +33,6 @@
 	},
 	"dependencies": {
 		"chart.js": "^4.5.1",
-		"lucide-svelte": "^1.0.1",
-		"motion": "^12.40.0"
+		"lucide-svelte": "^1.0.1"
 	}
 }
