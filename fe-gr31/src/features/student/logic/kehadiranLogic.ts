@@ -350,6 +350,13 @@ export async function submitKehadiran(params: {
 		return false;
 	}
 	addToast('Absensi berhasil direkam!', 'success');
+	
+	setTimeout(() => {
+		if (typeof window !== 'undefined') {
+			window.location.reload();
+		}
+	}, 1500);
+
 	return true;
 }
 
