@@ -327,6 +327,28 @@ export function getBrowserDeviceInfo(): { model: string; platform: string; osVer
 	};
 }
 
+export async function getBrowserDeviceInfoAsync(): Promise<{ model: string; platform: string; osVersion: string; appVersion: string }> {
+	const info = getBrowserDeviceInfo();
+
+	if (typeof navigator !== 'undefined' && (navigator as any).userAgentData) {
+		try {
+			const hints = await (navigator as any).userAgentData.getHighEntropyValues(['model', 'platformVersion']);
+			if (hints.model) {
+				info.model = hints.model;
+			}
+			if (hints.platformVersion) {
+				if (info.platform === 'android') {
+					info.osVersion = 'Android ' + hints.platformVersion;
+				}
+			}
+		} catch (e) {
+			console.warn('Error getting UA client hints:', e);
+		}
+	}
+
+	return info;
+}
+
 export async function submitKehadiran(params: {
 	status: 'hadir' | 'tidak_hadir' | 'izin' | 'sakit' | 'magang';
 	alasan?: string;
@@ -335,7 +357,7 @@ export async function submitKehadiran(params: {
 	fotoIzin?: string;
 	tipe?: string;
 }): Promise<boolean> {
-	const deviceInfo = getBrowserDeviceInfo();
+	const deviceInfo = await getBrowserDeviceInfoAsync();
 	const payload = {
 		...params,
 		deviceInfo

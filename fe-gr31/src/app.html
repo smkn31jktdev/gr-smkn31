@@ -5,6 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
 		<link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/assets/svg/smkn31jkt.svg" />
+		<script>
+			(function() {
+				var currentVersion = '1.1.1';
+				if (localStorage.getItem('app_version') !== currentVersion) {
+					localStorage.clear();
+					sessionStorage.clear();
+					if ('caches' in window) {
+						caches.keys().then(function(names) {
+							for (var i = 0; i < names.length; i++) caches.delete(names[i]);
+						});
+					}
+					localStorage.setItem('app_version', currentVersion);
+					window.location.reload(true);
+				}
+			})();
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
